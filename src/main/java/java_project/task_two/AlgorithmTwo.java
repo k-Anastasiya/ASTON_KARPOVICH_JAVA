@@ -10,13 +10,18 @@ public class AlgorithmTwo {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.println(MESSAGE_ENTER_NAME);
+
     while (scanner.hasNextLine()) {
       String name = scanner.nextLine();
-      if (name.equals(MESSAGE_CONSTANT_NAME)) {
-        System.out.format(("Привет, %s"), MESSAGE_CONSTANT_NAME);
-      } else {
-        System.out.println("Нет такого имени");
-      }
+      displayNameOnThe(name);
+     }
+  }
+  public static String displayNameOnThe(String name){
+    if (name.equals(MESSAGE_CONSTANT_NAME)) {
+      System.out.format(("Привет, %s"), MESSAGE_CONSTANT_NAME);
+    } else {
+      System.out.println("Нет такого имени");
     }
+    return name;
   }
 }

@@ -2,7 +2,7 @@ package java_project.task_one;
 
 import java.util.Scanner;
 
-class AlgorithmOne {
+public class AlgorithmOne {
 
   private static final String MESSAGE_ENTER_NUMBER = "Please, enter a number";
 
@@ -12,7 +12,7 @@ class AlgorithmOne {
     boolean isInputNumberCorrect = false;
     while (!isInputNumberCorrect) {
       System.out.println(MESSAGE_ENTER_NUMBER);
-      int inputNumber = scanner.nextInt();
+     int inputNumber = scanner.nextInt();
       isInputNumberCorrect = utils.isVisibleNamePerson(inputNumber);
     }
   }
